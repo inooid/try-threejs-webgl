@@ -7,20 +7,26 @@
     <meta charset=utf-8>
     <title>My first three.js app</title>
     <style>
+      html,
+      body,
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
       body {
         margin: 0;
         overflow: hidden;
-      }
-
-      canvas {
-        width: 100%;
-        height: 100%
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
       }
     </style>
   </head>
 </head>
 
 <body>
+  <button type="button" class="js-enable-audio-btn">Enable audio</button>
   <script src="bundle.js"></script>
 </body>
 
