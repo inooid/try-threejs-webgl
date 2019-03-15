@@ -3,8 +3,8 @@ export class KeyDownManager {
     this.pressedKeys = {};
   }
 
-  allPressedKeys() {
-    return Object.keys(this.pressedKeys).filter(Boolean);
+  isPressing(key) {
+    return this.pressedKeys[key];
   }
 
   register(key) {

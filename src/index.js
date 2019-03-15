@@ -82,18 +82,16 @@ function animate() {
   cube.rotation.y += 0.01;
 
   // Lets handle keypresses fluidly
-  const pressedKeys = keyDownManager.allPressedKeys();
-
-  if (pressedKeys.includes('ArrowUp')) {
+  if (keyDownManager.isPressing('ArrowUp')) {
     changeLightPosition('z', 'DEC');
   }
-  if (pressedKeys.includes('ArrowDown')) {
+  if (keyDownManager.isPressing('ArrowDown')) {
     changeLightPosition('z', 'INC');
   }
-  if (pressedKeys.includes('ArrowLeft')) {
+  if (keyDownManager.isPressing('ArrowLeft')) {
     changeLightPosition('x', 'DEC');
   }
-  if (pressedKeys.includes('ArrowRight')) {
+  if (keyDownManager.isPressing('ArrowRight')) {
     changeLightPosition('x', 'INC');
   }
 
